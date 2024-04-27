@@ -1,0 +1,182 @@
+/* Container principal para garantir a largura do site */
+.container {
+    max-width: 1000px; /* Define uma largura máxima para o site */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Garante que o padding seja considerado na largura total */
+}
+
+/* Estilo para a seção de inserção de itens */
+.newItem {
+    background-color: #F0F0F0; /* Fundo cinza claro */
+    padding: 10px; /* Espaçamento interno */
+    color: #0c0238; /* Azul escuro */
+    display: flex; /* Flexbox para alinhamento linear */
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Centraliza na vertical */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 100%; /* Cobre toda a largura do container */
+    flex-wrap: wrap; /* Permite redistribuição dos itens */
+}
+
+.newItem input {
+    margin: 10px 5px; /* Ajusta as margens entre campos */
+    border: 1px solid #0c0238; /* Bordas azuis escuras */
+    padding: 8px; /* Espaçamento interno */
+    font-size: 16px;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.addBtn, 
+#updateButton {
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indicador de clique */
+    transition: background-color 0.3s;
+}
+
+.addBtn {
+    background-color: #0c0238; /* Fundo azul escuro */
+    color: #FFFFFF;
+}
+
+.addBtn:hover {
+    background-color: #FF8C00; /* Cor diferente no hover */
+}
+
+#updateButton {
+    background-color: #FF8C00; /* Fundo laranja */
+    color: #FFFFFF;
+}
+
+#updateButton:hover {
+    background-color: #FF4500; /* Cor diferente no hover */
+}
+
+/* Estilo para a aba de filtro */
+.input-container {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: space-between; /* Espaço uniforme entre itens */
+    align-items: center; /* Centraliza na vertical */
+    background-color: #0c0238; /* Fundo azul escuro */
+    color: #FFFFFF; /* Texto branco */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 100%; /* Cobre a largura total da página */
+    margin: 10px auto; /* Espaçamento para a seção de filtro */
+}
+
+.input-container input {
+    width: 80%; /* Ajusta a largura do campo de entrada */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px;
+    border: 1px solid #FFFFFF; /* Bordas brancas */
+}
+
+/* Estilo para a tabela */
+.table-container {
+    display: flex; /* Layout flexível para divisão do espaço */
+    justify-content: space-between; /* Espaço entre elementos */
+}
+
+.items {
+    width: 100%; /* Cobre a largura total */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Garante que a tabela cubra a largura total */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Impede transbordamento */
+}
+
+th {
+    background-color: #FF8C00; /* Fundo laranja escuro */
+    color: #FFFFFF; /* Texto branco */
+    padding: 12px 8px;
+    font-size: 18px;
+    text-align: start; /* Alinhamento do texto */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+td {
+    padding: 12px 8px; /* Espaçamento interno */
+    font-size: 16px;
+    border-bottom: 1px solid #DDD; /* Linha de separação */
+    transition: all 0.3s ease;
+}
+
+tr:nth-child(odd) {
+    background-color: #F5F5F5; /* Fundo cinza claro para linhas ímpares */
+}
+
+tr:hover {
+    background-color: #E0E0E0; /* Cor diferente no hover */
+    transform: scale(1.02); /* Leve aumento de escala no hover */
+}
+
+/* Banner */
+.banner {
+    width: 100%; /* O banner cobre toda a largura do container */
+    height: 200px; /* Define a altura do banner */
+    overflow: hidden;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espaçamento abaixo do banner */
+}
+
+.banner img {
+    width: 100%; /* Largura total da imagem */
+    height: auto; /* Ajusta a altura conforme necessário */
+    object-fit: cover; /* Cobre a área do banner */
+}
+
+.title {
+    color: #FFFFFF; /* Texto branco */
+    width: 100%; /* Cobre a largura total */
+    background-color: #0c0238; /* Fundo azul escuro */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Seção do tempo com layout mais escuro */
+#weather-component {
+    background-color: #333333; /* Cor do fundo */
+    color: #FFFFFF; /* Texto branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    text-align: center; /* Centraliza o texto */
+}
+
+.weather-search {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza os elementos */
+    align-items: center; /* Centraliza na vertical */
+}
+
+.city-input {
+    background-color: #555555; /* Fundo escuro */
+    color: #FFFFFF; /* Texto branco */
+    border: 1px solid #666666; /* Bordas escuras */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.weather-search button {
+    padding: 10px; /* Espaçamento interno */
+    min-width: 50px; /* Largura mínima */
+    background-color: #8DD0F5; /* Fundo azul claro */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Sem bordas */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Indicador de clique */
+}
+
+.weather-search button:hover {
+    background-color: #5C54ED; /* Cor diferente ao passar o mouse */
+}

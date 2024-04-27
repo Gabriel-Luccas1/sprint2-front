@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto</title>
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Planejamento Semanal</h2>
+        </div>
+        <div class="banner">
+            <img src="C:\Users\bielu\OneDrive\Área de Trabalho\MVP 2\project\meu_app_front\img\planejamento-estrategico-1024x576.webp" alt="Banner">
+        </div>
+    </header>
+
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newEncarregado" placeholder="Adicionar encarregado responsável:">
+        <input type="text" id="newEquipe" placeholder="Equipe:">
+        <input type="text" id="newFuncao" placeholder="Função:">
+        <input type="text" id="newServico_local" placeholder="Serviço e Local:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+        <button id="updateButton">Atualizar Lista</button>
+    </section>
+
+    <!-- Filtro com items existentes -->
+    <div class="input-container">
+        <div>Filtro</div>
+        <input id="input-busca" type="text" class="form-control mt-3 mb-3" placeholder="Filtre por uma informação pertinente da tabela:">
+    </div>
+    
+    <!-- Tabela com items existentes -->
+    <!-- Container para a tabela e a seção do tempo -->
+<div class="table-container">
+    <!-- Seção da tabela -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Encarregado</th>
+                <th>Equipe</th>
+                <th>Função</th>
+                <th>Serviço e Local</th>
+                <th>Ações</th>
+            </tr>
+            <!-- Adicione as linhas da tabela aqui -->
+        </table>
+    </section>
+
+    <!-- Seção do tempo -->
+    <section id="weather-component">
+        <!-- Campo de pesquisa para a cidade -->
+        <div class="weather-search">
+            <input type="text" id="city-input" placeholder="Insira a cidade" class="city-input">
+            <button id="search-btn">Buscar</button>
+        </div>
+
+        <!-- Exibição dos detalhes do tempo -->
+        <div class="weather-details">
+            <h2 id="weather-city"></h2>
+            <div class="weather-temp-and-icon">
+                <p id="weather-temperature"></p>
+                <img id="weather-icon" src="" alt="Ícone do tempo">
+            </div>
+            <div class="weather-info">
+                <p id="weather-description"></p>
+                <p id="weather-humidity"></p>
+                <p id="weather-wind"></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <script src="scripts.js"></script>
+    <script src="weatherAPI.js"></script>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./meu_app_front
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./meu_app_api
+    ports:
+      - "5000:5000"
